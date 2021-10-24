@@ -12,3 +12,8 @@ services:
     tty: true
     volumes:
       - .:/app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
